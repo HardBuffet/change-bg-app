@@ -1,0 +1,149 @@
+/*
+mobile(375px)
+desktop(2000px)
+*/
+
+:root {
+  /* palette */
+  /* hex */
+  --green: #4caf50;
+  --red: #af4c50;
+  --white: #fff;
+  --black: #111;
+
+  /* rgb */
+  --mainShadow: rgba(0, 0, 0, 0.4);
+
+  --pageBg: var(--black);
+  --pageColor: var(--white);
+  --titleWordColor: var(--green);
+  --subtitleColor: var(--red);
+  --subtitleTextShadowColor: rgba(255, 255, 255, 0.5);
+  --titleBorderColor: var(--mainShadow);
+  --btnBoxShadowColor: var(--mainShadow);
+  --btnTextShadowColor: var(--mainShadow);
+  --btnBg: linear-gradient(to right, var(--green), var(--red));
+  --btnColor: var(--white);
+  --kbdBG: #000;
+  --kbdBorderColor: var(--white);
+
+  /* borders */
+  --titleBorder: 1px solid var(--titleBorderColor);
+  --kbdBorder: 1px solid var(--kbdBorderColor);
+
+  /* text-shadows */
+  --subtitleTextShadow: 1px 1px 0 var(--subtitleTextShadowColor);
+  --btnTextShadow: 1px 1px 0 var(--btnTextShadowColor);
+
+  /* box-shadows */
+  --btnBoxShadow: 5px 5px 10px var(--btnBoxShadowColor);
+
+  /* fonts */
+  --mainFont: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  --marPad: 0;
+
+  font-family: var(--mainFont);
+  margin: var(--marPad);
+  padding: var(--marPad);
+  box-sizing: border-box;
+}
+
+kbd {
+  background: var(--kbdBG);
+  border: var(--kbdBorder);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* look */
+.page {
+  background: var(--pageBg);
+  color: var(--pageColor);
+}
+
+.title {
+  border-bottom: var(--titleBorder);
+}
+
+.title__word {
+  color: var(--titleWordColor);
+}
+
+.subtitle {
+  color: var(--subtitleColor);
+  text-shadow: var(--subtitleTextShadow);
+}
+
+.btn {
+  box-shadow: var(--btnBoxShadow);
+  text-shadow: var(--btnTextShadow);
+  background: var(--btnBg);
+  color: var(--btnColor);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  border: none;
+  transition: background-size 0.3s;
+  background-size: 200%;
+}
+
+.btn:hover {
+  background-size: 100%;
+}
+
+/* typography */
+.page {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: min-content;
+}
+.page__main {
+  display: grid;
+  margin: auto;
+  text-align: center;
+  gap: 0.938rem; /* fallback */
+  gap: clamp(0.938rem, 0.65rem + 1.23vw, 2.188rem);
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  font-size: 2.188rem; /* fallback */
+  font-size: clamp(2.188rem, 1.68rem + 2.15vw, 4.38rem);
+}
+
+.subtitle {
+  font-size: 1.88rem; /* fallback */
+  font-size: clamp(1.88rem, 1.59rem + 1.23vw, 3.13rem);
+}
+
+.desc {
+  font-size: 1.38rem; /* fallback */
+  font-size: clamp(1.38rem, 1.188rem + 0.8vw, 2.19rem);
+}
+
+.desc__key {
+  line-height: 2.5rem; /* fallback */
+  line-height: clamp(2.5rem, 2.14rem + 1.54vw, 4.07rem);
+}
+
+.btn {
+  padding: 13px 25px;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  font-size: 1.188rem; /* fallback */
+  font-size: clamp(1.188rem, 1.03rem + 0.68vw, 1.88rem);
+}
+
+/* after an event add this class to the body children */
+.hide {
+  display: none;
+}

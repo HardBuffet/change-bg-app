@@ -1,0 +1,32 @@
+{
+  "name": "change-bg-app",
+  "version": "1.0.0",
+  "description": "Change background application",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HardBuffet/change-bg-app.git"
+  },
+  "keywords": [
+    "change",
+    "background",
+    "colors",
+    "rgb",
+    "palette"
+  ],
+  "author": "HardBuffet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HardBuffet/change-bg-app/issues"
+  },
+  "homepage": "https://github.com/HardBuffet/change-bg-app#readme",
+  "dependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-watch": "^1.1.0",
+    "prettier": "^2.6.2"
+  }
+}
