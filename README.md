@@ -11,11 +11,11 @@
 
 ### Screenshot
 
-![](./img/final-project-desktop.png)
+![](src/img/final-project-desktop.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://hardbuffet.github.io/change-bg-app/)
 
 ## My process
 
