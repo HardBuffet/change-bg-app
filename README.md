@@ -15,7 +15,7 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://hardbuffet.github.io/change-bg-app/)
+- Live Site URL: [GitHub Pages](https://hardbuffet.github.io/change-bg-app/)
 
 ## My process
 
