@@ -11,7 +11,7 @@
 
 ### Screenshot
 
-![](src/img/final-project-desktop.png)
+![](img/final-project-desktop.png)
 
 ### Links
 
